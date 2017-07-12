@@ -7,9 +7,9 @@ import Data.Text (Text)
 import Network.Google
 import Network.Google.Storage
 import System.IO (stdout)
-import System.Environment as Env
 
 import qualified Data.Text as T
+import qualified System.Environment as Env
 
 uploadIt :: Text -> FilePath -> IO Object
 uploadIt bucket filename = do
@@ -25,7 +25,7 @@ main :: IO ()
 main = do
   args <- Env.getArgs
   case args of
-    [ bucket, filename ] -> do
+    [bucket, filename] -> do
       putStrLn "Uploading..."
       object <- uploadIt (T.pack bucket) filename
-      print object
+      print ("the object", object)
