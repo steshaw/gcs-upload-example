@@ -2,3 +2,8 @@ resolver: lts-8.22
 
 packages:
   - '.'
+
+extra-deps:
+  - gogol-0.2.0
+  - gogol-core-0.2.0.1
+  - gogol-storage-0.2.0

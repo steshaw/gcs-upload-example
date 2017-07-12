@@ -13,8 +13,8 @@ extra-source-files:
 
 dependencies:
   - base >= 4.7 && < 5
-  - gogol
-  - gogol-storage
+  - gogol == 0.2.*
+  - gogol-storage == 0.2.*
   - lens
   - text
 
