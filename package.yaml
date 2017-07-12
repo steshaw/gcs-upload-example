@@ -1,0 +1,24 @@
+name:                gcs-upload-example
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/steshaw/gcs-upload-example#readme
+license:             BSD3
+author:              Steven Shaw
+maintainer:          steven@steshaw.org
+copyright:           (c) 2017, Steven Shaw
+category:            Example
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - gogol
+  - gogol-storage
+  - lens
+  - text
+
+executables:
+  gcs-upload:
+    source-dirs:      src
+    main:             Main.hs
