@@ -11,11 +11,15 @@ category:            Example
 extra-source-files:
   - README.md
 
+ghc-options: -Wall -O
+
 dependencies:
   - base >= 4.7 && < 5
   - gogol == 0.2.*
   - gogol-storage == 0.2.*
+  - hscolour
   - lens
+  - pretty-show
   - text
 
 executables:
